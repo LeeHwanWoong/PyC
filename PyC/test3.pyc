@@ -1,0 +1,53 @@
+int main()
+{
+    tree(int) rt;
+    node(int) a1;
+    node(int) b1;
+    node(int) b2;
+    node(int) c1;
+    node(int) c2;
+    node(int) c3;
+    node(int) c4;
+
+    node(int) print1;
+    node(int) print2;
+    node(int) print3;
+    node(int) print4;
+    node(int) print5;
+    node(int) print6;
+    node(int) print7;
+
+    rt.push(50);
+    rt.push(30);
+    rt.push(70);
+    rt.push(20);
+    rt.push(40);
+    rt.push(60);
+    rt.push(80);
+
+    a1 = rt.tree(0, 0);
+    b1 = a1.left();
+    b2 = a1.right();
+    c1 = b1.left();
+    c2 = b1.right();
+    c3 = b2.left();
+    c4 = b2.right();
+
+    print1 = rt.tree(0,0);
+    print2 = print1.left();
+    print3 = print1.right();
+    print4 = print2.left();
+    print5 = print2.right();
+    print6 = print3.left();
+    print7 = print3.right();
+
+    output("\t\t\t"+print1);
+    output("\n");
+    output("\t\t" + "/" +"\t\t\\");
+    output("\n");
+    output("\t" + print2 + "\t\t\t\t" + print3);
+    output("\n");
+    output("\t"+"/"+ "\t" + "\\"+"\t\t\t"+"/"+"\t"+ "\\" );
+    output("\n");
+    output("  " + print4 + "\t\t\t" + print5 +"\t"+ print6+"\t\t\t" + print7);
+}

@@ -1,0 +1,52 @@
+int main(){
+    array(int) arr;
+    stack(int) stk;
+    queue(int) que;
+    list(int) lst;
+    node(int) tnode;
+   	int i,temp, mx, mn,j;
+
+   	j = int(input());
+   	i = 0;
+   	while(i<j){
+   		temp = int(input());
+   		arr.push(temp);
+   		stk.push(temp);
+   		que.push(temp);
+   		lst.push(temp);
+   		i = i+1;
+   	}
+
+   	mx = max(arr);
+   	mn = min(arr);
+
+   	output("input is " + arr);
+   	output("mininum is " + mn);
+   	output("maximum is " + mx);
+
+   	sorting(arr);
+
+   	output("sorting result is " + arr);
+
+   	tnode = lst.head();
+   	output("head is " + tnode);
+   	tnode = tnode.right();
+   	output("head's right is " + tnode);
+   	tnode = lst.tail();
+   	output("tail is " + tnode);
+   	tnode = tnode.left();
+   	output("tail's left is "+tnode);
+
+   	i = 0;
+   	while(i<j){
+   		temp = stk.pop();
+   		output("stack is " + temp);
+   		i = i+1;
+   	}
+   	i = 0;
+   	while(i<j){
+   		temp = que.pop();
+   		output("queue is " + temp);
+   		i = i+1;
+   	}
+}

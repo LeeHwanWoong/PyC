@@ -1,0 +1,8 @@
+int main(){
+	array(int) a;
+	int b;
+	a.push(3);
+	a.push(4);
+	a.push(2);
+	b = min(a);
+}
